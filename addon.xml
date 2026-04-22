@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.system.adapter.helper"
+       name="系统适配辅助工具"
+       version="1.0.0"
+       provider-name="开发者占位"
+       minversion="21.0.0"
+       broken="false">
+    <!-- 核心依赖声明：适配 Kodi 21 Python 3.10 环境 -->
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <!-- 插件类型：Program 工具类，入口为 main.py -->
+    <extension point="xbmc.python.programsouce" library="main.py">
+        <provides>program</provides>
+    </extension>
+
+    <!-- 元数据：完整符合 Kodi 21 规范 -->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">System Adaptation Helper for Kodi 21</summary>
+        <summary lang="zh_CN">Kodi 21 系统适配辅助工具</summary>
+        
+        <description lang="en_GB">A developer tool for Kodi 21 Omega, assisting with system adaptation, component conflict detection, version compatibility checking, and bug troubleshooting.</description>
+        <description lang="zh_CN">专为 Kodi 21 Omega 打造的开发者工具，协助完成系统功能适配、组件冲突检测、版本兼容校验及基础 bug 排查。</description>
+        
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <source>https://github.com/yourname/plugin.program.system.adapter.helper</source>
+        <news>
+            v1.0.0: Initial release, support system adaptation detection, component conflict scan, version check and bug troubleshooting.
+        </news>
+    </extension>
+</addon>
